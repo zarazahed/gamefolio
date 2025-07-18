@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "SVThin";
+  src: url("svthin.otf.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "SVThin";
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+  background: #000000;
+  position: relative;
+  cursor: url("normalselect.cur"), auto;
+}
+
+#bgImage {
+  position: fixed;
+  bottom: 0;
+  transform: translateY(0);
+  width: 100vw;
+  height: 250vh;
+  max-width: none;
+  max-height: none;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center bottom;
+  transition: transform 3s ease-out;
+  transform-origin: center bottom;
+}
+
+#bgImage2 {
+  position: fixed;
+  width: 100vw;
+  height: 250vh;
+  max-width: none;
+  max-height: none;
+  z-index: -1;
+  object-fit: cover;
+  object-position: top;
+}
+
+#panel {
+  width: 900px;
+  height: 600px;
+  z-index: -1;
+}
+
+body.scroll-up #bgImage {
+  transform: translateY(150vh);
+}
+
+body.scroll-up #buttons {
+  opacity: 1;
+}
+
+#buttons {
+  position: absolute;
+  top: 30vw;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 4s ease-in-out;
+  display: flex;
+  gap: 2vw;
+  opacity: 0;
+  z-index: 2;
+}
+
+button {
+  border: none;
+  margin: 1vw;
+  padding: 0;
+  cursor: url("cursor.cur"), pointer;
+  z-index: 3;
+}
+
+button img {
+  display: block;
+}
+
+button:hover {
+  cursor: url("cursor.cur"), pointer;
+}
+
+p {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+  font-family: "SVThin";
+}
+
+#panel-container {
+  position: relative;
+  width: 900px;
+  height: 600px;
+}
+
+#panel {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#panel-text {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  color: black;
+  font-family: "SVThin", sans-serif;
+  font-size: 24px;
+}
+
+a:hover {
+  cursor: url("cursor.cur"), pointer;
+}
