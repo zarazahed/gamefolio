@@ -4,7 +4,7 @@
 ### What my project is/does:
 > It looks like the Stardew Valley home page! You can play the music and view the scrolling-up animation.
 >
-> I added pages for "About, "Contact", and "Projects"!
+> I added pages for "About, "Socials", and "Projects"!
 > 
 > Here's a screenshot!
 > > ![Screenshot of the home page](ss.png)
