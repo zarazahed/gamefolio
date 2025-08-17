@@ -7,7 +7,7 @@
 > I added pages for "About, "Contact", and "Projects"!
 > 
 > Here's a screenshot!
-> 
+> > ![Screenshot of the home page](ss.png)
 
 ### How you can view my project:
 > Click here: https://zarazahed.github.io/gamefolio/
